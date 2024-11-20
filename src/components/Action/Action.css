@@ -1,0 +1,208 @@
+
+/* Hero Section */
+.action-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('../../assets/construction1.png') no-repeat center center/cover;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* Overlay */
+.overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for darker overlay */
+}
+
+/* Hero Content */
+/* Hero Content */
+.action-content {
+    position: absolute; 
+    z-index: 2;
+    margin-left: 80px;
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%); 
+    color: white;
+    text-align: left; 
+    padding: 20px 30px; /* Slightly increased padding */
+    width: 50%; 
+}
+
+/* Title */
+.title {
+    font-size: 50px; /* Increased font size */
+    font-weight: 800; /* Bolder text */
+    color: #ffc107 !important; /* Pure white for maximum contrast */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Add subtle shadow for more definition */
+}
+
+/* Description Visibility */
+.description {
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 20px;
+    max-width: 600px; 
+    line-height: 1.6; /* Increase line spacing for readability */
+    color: #f0f0f0; /* Slightly off-white for better readability */
+}
+
+/* Button Enhancements */
+.hire-btn {
+    background-color: #ffc107;
+    color: black;
+    font-size: 18px; 
+    padding: 15px 35px; 
+    border-radius: 8px; /* More rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hire-btn:hover {
+    background-color: #ff9800; 
+    transform: scale(1.1); /* More prominent zoom effect */
+}
+
+/* Right Box */
+.right-box {
+    position: absolute;
+    top: 50%; /* Vertically align */
+    right: 170px; /* Add padding from the right edge */
+    transform: translateY(-50%); /* Center vertically */
+    width: 500px; /* Default width */
+    height: 400px; /* Default height */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional light border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    animation: fadeIn 1s ease-in-out; /* Animation for appearance */
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Animation for Right Box */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    color: white;
+    margin-left: 20px; /* Align content to the left */
+    position: absolute;
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+}
+
+.contact-title {
+    font-size: 22px; /* Increase font size */
+    margin-top: 10px;
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+.contact-number {
+    font-size: 24px; /* Larger font size for phone number */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Call Icon */
+.call-icon {
+    font-size: 70px; /* Increase icon size */
+    color: #ffc107; /* Icon color */
+    margin-bottom: 15px; /* Spacing below the icon */
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 460px;
+    position: relative; 
+    width: 120%;
+    padding: 0px 5px; /* Add vertical padding to make the section taller */  
+    transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+
+
+.stat {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px; /* Increase padding for larger stat boxes */
+    border-radius: 10px;
+    border: 5px solid lightgrey;
+}
+/* Add a thin border between the stat boxes */
+.stat:not(:last-child) {
+    border-right: 2px solid rgba(255, 255, 255, 0.5); /* Thin white border */
+}
+
+.stat i {
+    font-size: 30px;
+    color: #ffc107; /* Icon color */
+    margin-bottom: 10px;
+}
+
+.stat p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat p:last-child {
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .right-box {
+        /* ... existing media query ... */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        margin-bottom: 20px;
+    }
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .right-box {
+        width: 300px;
+        height: 300px;
+        right: 20px; /* Reduced right margin for small screens */
+    }
+
+    .action-content {
+        padding-left: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .title {
+        font-size: 32px; /* Smaller font size for mobile */
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hire-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

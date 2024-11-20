@@ -1,0 +1,156 @@
+/* Introduction Page Styling */
+.introduction-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .introduction-content {
+    display: flex;
+    max-width: 1200px; /* Max width of the content */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .introduction-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .introduction-text {
+    width: 50%;
+    padding-left: 40px;
+    text-align: left;
+  }
+  
+  .introduction-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .introduction-text h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fcb900;
+    margin: 20px 0;
+  }
+  
+  .introduction-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .introduction-text h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .introduction-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+  
+  .introduction-text ul li {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+    padding-left: 30px; /* Adjust padding for proper alignment */
+    position: relative; /* Positioning for the tick icon */
+  }
+  
+  .quality-list-container {
+    border: 2px solid #f9f9f9; /* Green border around the list */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners for the box */
+    background-color: #f9f9f9; /* Light background for better visibility */
+  }
+  
+  .tick-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the tick vertically */
+    font-size: 20px;
+    color: #ffc107; /* Green color for the tick */
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Increased margin below the profile section for more space */
+  }
+  
+  .profile-image {
+    width: 20%; /* Adjust the size of the image */
+    max-width: 80px;
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .profile-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px; /* Add this to reduce space between name and title */
+  }
+  
+  .profile-text p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0; /* Remove any top margin */
+  }
+
+  /* Contact Button */
+  .more-btn {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px; /* Increased space above the button */
+    align-self: flex-start; /* Align the button to the left (optional) */
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .introduction-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .introduction-text {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .introduction-image img {
+      max-width: 100%;
+    }
+  
+    .profile-section {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .profile-image {
+      width: 30%; /* Adjust the profile image size for smaller screens */
+      max-width: 120px;
+      margin-right: 0;
+      margin-bottom: 10px; /* Add space between image and text */
+    }
+  }
+  

@@ -1,0 +1,57 @@
+/* General styles */
+.client-carousel {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    width: 80%;  /* Occupy 80% of the screen width */
+    margin: 0 auto;  /* Center the container horizontally */
+}
+
+.carousel-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.carousel-header p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Client item styles */
+.client-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;  /* Ensure client item takes full height */
+    margin-left: 20px;  /* Add space between boxes on the left */
+    margin-right: 20px;  /* Add space between boxes on the right */
+    margin-bottom: 20px;  /* Add space between boxes vertically */
+    border: 5px solid lightgrey;  /* Add thick light grey border inside the box */
+    box-sizing: border-box;  /* Include border and padding in the element's total width/height */
+}
+
+
+/* Adjust the image size */
+.client-logo {
+    padding-right: 20px;
+    max-width: 200%;
+    height: 250px;  /* Adjust the height as per your requirement */
+    object-fit: contain;
+    margin-bottom: 10px;  /* Adjust the space below the image */
+}
+
+/* Dots customization */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #007bff;
+}

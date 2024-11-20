@@ -1,0 +1,118 @@
+/* Header Bar */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; /* Increased padding for a larger header */
+    background-color: #010000; /* Dark background color */
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    height: 20px; /* Increased height for the header bar */
+}
+
+.contact-email, .location {
+    font-size: 16px; /* Increased font size */
+    color: #fff; /* White text */
+}
+
+.contact-email:hover, .location:hover {
+    color: #d1d101; /* Hover color for text */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Increased margin between icons */
+    font-size: 22px; /* Increased size of social icons */
+    color: #fff; /* White color for icons */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #d1d101; /* Hover color for icons */
+}
+
+.logo-icon {
+    margin-left: 15px; /* Increased margin */
+    width: 40px; /* Increased logo size */
+    height: 40px;
+    cursor: pointer;
+    color: #fff; /* White for logo */
+}
+
+.logo-icon:hover {
+    color: #d1d101; /* Hover color for logo */
+}
+
+.quote-btn {
+    padding: 10px 20px; /* Increased padding for a bigger button */
+    font-size: 16px; /* Increased font size for the button text */
+    color: #fff; /* White button text */
+    background-color: #ffc107; /* Background matches header */
+    border: 2px solid #fff; /* Thicker border */
+    border-radius: 5px; /* Slightly more rounded corners */
+    cursor: pointer;
+}
+
+.quote-btn:hover {
+    background-color: #d1d101; /* Button hover background color */
+     /* Contrast text color on hover */
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #010000; /* Dark sidebar background */
+    color: #fff; /* White text */
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Increased margin between items */
+}
+
+.sidebar ul li a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    font-size: 20px; /* Increased font size for sidebar links */
+}
+
+.sidebar ul li a:hover {
+    color: #d1d101; /* Hover color for links */
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; /* Increased distance from the top */
+    right: 15px; /* Increased distance from the right */
+    font-size: 24px; /* Increased close button size */
+    background: none;
+    border: none;
+    color: #fff; /* White close button */
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #d1d101; /* Hover color for close button */
+}
+
+.hamburger-icon .line {
+    height: 4px; /* Increased height for hamburger icon lines */
+    background-color: #fff;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger-icon:hover .line {
+    background-color: #d1d101; /* Hover color for lines */
+}

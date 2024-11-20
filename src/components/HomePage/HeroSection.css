@@ -1,0 +1,82 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background: url('../../assets/home.png') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for improved contrast */
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center-align text */
+  color: white;
+  width: 80%; /* Adjust content width */
+  max-width: 800px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add some padding */
+
+  border-radius: 10px; /* Optional: round the corners */
+}
+
+/* Tagline */
+.tagline {
+  color: #ffc107;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.title {
+  color: white !important;
+  font-size: 42px; /* Adjust font size as needed */
+  font-weight: bold; /* Bold text for emphasis */
+  line-height: 1.2; /* Adjust line height for spacing */
+  margin-bottom: 20px; /* Space between titles */
+  text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+
+/* Description */
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5; /* Improve readability */
+  color: #f0f0f0; /* Slightly lighter color for descriptions */
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #e6a400; /* Slightly darker on hover */
+}

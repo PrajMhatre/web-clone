@@ -1,0 +1,137 @@
+.why-choose-us-table-section {
+  width: 75%;
+  height: 80%;
+  background-color: #ffffff;
+  padding-left: 20px;
+  border-radius: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: -100px; /* Adjust this value to move the table upwards or downwards */
+  display: flex;
+  position: relative;
+  z-index: 10; /* Brings the table above other content in the background */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.header-left {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.header-left h5 {
+  padding-bottom: 0px;
+  color: #fcb900;
+  font-weight: bold;
+  font-size: 20px; /* Increased font size */
+}
+
+.header-left h2 {
+  padding-top: 0px;
+  font-size: 36px; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.why-header h5 {
+  color: #fcb900;
+  font-weight: bold;
+  font-size: 24px; /* Increased font size */
+}
+
+.why-header h2 {
+  font-size: 48px; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+}
+
+.why-table-container {
+  /* Controls the maximum width of the table */
+  margin: 0 auto; /* Centers the table horizontally */
+  padding: 20px; /* Adds spacing around the table */
+}
+
+.why-table {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increased gap between rows */
+}
+
+.why-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures it wraps in case of small screen sizes */
+}
+
+.why-box {
+  flex: 1;
+  max-width: 30%; /* Ensures 3 items per row, 30% width for each box */
+  padding: 20px;
+  text-align: center;
+  box-shadow: none; /* Removed box-shadow */
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 50px; /* Increased icon size */
+  color: #333;
+  margin-right: 20px; /* Space between icon and content */
+}
+
+.icon.yellow {
+  color: #fcb900;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.text-content h3 {
+  font-size: 28px; /* Increased font size */
+  color: #333;
+  margin-bottom: 15px; /* Increased spacing below the heading */
+}
+
+.text-content p {
+  font-size: 18px; /* Increased font size */
+  color: #666;
+}
+
+.thin-line {
+  border: none;
+  border-top: 1px solid #333; /* Thin line color */
+  margin: 5px 0; /* Space above and below the line */
+}
+
+.book-btn {
+  padding: 12px 24px; /* Increased padding for a bigger button */
+  font-size: 18px; /* Increased font size for the button text */
+  color: #fff; /* White button text */
+  background-color: #ffc107; /* Background matches header */
+  border: 2px solid #fff; /* Thicker border */
+  border-radius: 5px; /* Slightly more rounded corners */
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #d1d101; /* Button hover background color */
+  /* Contrast text color on hover */
+}

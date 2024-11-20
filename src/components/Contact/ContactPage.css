@@ -1,0 +1,86 @@
+.contact-page {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .contact-map {
+    width: 35%;
+    height: 20%;
+    text-align: left;
+  }
+  
+  .contact-map h2 {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-map h3 {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form {
+    width: 35%; /* Adjust width as needed */
+    height: 500px; /* Increase this value for more height */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    
+    width: 75%;
+    height: 20px;
+    padding: 10px;
+
+    border: 1px solid white; /* Add a 1px white border */
+    outline: none;
+    margin: 0 auto;
+    background-color: transparent; /* Make background transparent */
+    opacity: 0.9; /* Adjust opacity for text visibility */
+    color: solid rgb(0, 0, 0); /* Set text color to white */
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-form button {
+    width: 50%;
+    margin: 0 auto;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: darkorange;
+  }
+  
